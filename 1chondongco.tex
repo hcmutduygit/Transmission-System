@@ -31,28 +31,28 @@ Hiệu suất hệ thống:
     \item Bộ truyền bánh răng trụ răng nghiêng $u_{br} = 3...5$
 \end{itemize}
 Như vậy số vòng quay của động cơ dao động trong khoảng từ 713 vòng/phút đến 2971 vòng/phút.\\
-Từ bảng P1.1, Tài liệu [1] chọn động cơ DK32-6 có: $P_{dc} = 4.5 kW$ và $n_{dc} = 965 vòng/phút$. \\
+Chọn động cơ SGA132S có: $P_{dc} = 5.5 kW$ và $n_{dc} = 1450 vòng/phút$. \\
 Như vậy tỉ số truyền chung của hệ thống là:
 \[
-    u_{ch} =\frac{n_{dc}}{n_{ct}} = \frac{950}{118.82} = 7.995
+    u_{ch} =\frac{n_{dc}}{n_{ct}} = \frac{1450}{118.82} = 12.202
 \]
 
-\section{Phân phối tỉ số truyền}
+\subsection{Phân phối tỉ số truyền}
 Tỷ số truyền của cả hệ được xác định theo công thức:
 \[
     u_{ch} = u_d.u_{br} 
 \]
 Chọn tỉ số truyền của hộp giảm tốc:
 \[
-    u_{br} = 3
+    u_{br} = 5
 \]
 Như vậy: 
 \[
-    u_d = \frac{u_{ch}}{u_{br}} = \frac{7.995}{3} = 2.665
+    u_d = \frac{u_{ch}}{u_{br}} = \frac{12.202}{5} = 2.44
 \]
 
-\section{Tính toán công suất và momen trên các trục}
-\subsection{Tính toán công suất trên các trục}
+\subsection{Tính toán công suất và momen trên các trục}
+\subsubsection{Tính toán công suất trên các trục}
 Công suất trên trục công tác
 \[
     P_{ct} = \frac{F.v}{1000} = \frac{2800.1.4}{1000} = 3.92 kW
@@ -65,22 +65,22 @@ Công suất trên trục I:
 \[
     P_{I} = \frac{P_{II}}{\eta_{ol}.\eta_{br}} = \frac{4}{0.995 \cdot 0.98} = 4.102 kW \\
 \]
-\subsection{Tính toán momen trên các trục}
+\subsubsection{Tính toán momen trên các trục}
 Momen trên trục công tác:
 \[
-    M_{lv} = 9,55 \cdot 10^6 \cdot \frac{P_{ct}}{n_{ct}} = 9.55 \cdot 10^6 \cdot \frac{3.92}{118.82} = 315053.5 (N.mm) \\
+    M_{lv} = 9.55 \cdot 10^6 \cdot \frac{P_{ct}}{n_{ct}} = 9.55 \cdot 10^6 \cdot \frac{3.92}{118.82} = 315053.5 (N.mm) \\
 \]
 Momen trên trục II:
 \[
-    M_{II} = 9,55 \cdot 10^6 \cdot \frac{P_{II}}{n_{II}} = 9.55 \cdot 10^6 \cdot \frac{4}{118.82} = 321442.24 (N.mm) \\
+    M_{II} = 9.55 \cdot 10^6 \cdot \frac{P_{II}}{n_{II}} = 9.55 \cdot 10^6 \cdot \frac{4}{118.82} = 321442.24 (N.mm) \\
 \]
 Momen trên trục I:
 \[
-    M_{I} = 9,55 \cdot 10^6 \cdot \frac{P_{I}}{n_{I}} = 9.55 \cdot 10^6 \cdot \frac{4.102}{356.47} = 109883.5 (N.mm) \\
+    M_{I} = 9.55 \cdot 10^6 \cdot \frac{P_{I}}{n_{I}} = 9.55 \cdot 10^6 \cdot \frac{4.102}{594.26} = 65914.97 (N.mm) \\
 \]
 Momen trên trục động cơ:
 \[
-    M_{dc} = 9,55 \cdot 10^6 \cdot \frac{P_{dc}}{n_{dc}} = 9.55 \cdot 10^6 \cdot \frac{4.275}{950} = 42950.09 (N.mm) \\
+    M_{dc} = 9.55 \cdot 10^6 \cdot \frac{P_{dc}}{n_{dc}} = 9.55 \cdot 10^6 \cdot \frac{4.275}{1450} = 28139.71 (N.mm) \\
 \]
 
 \subsection{Bảng thông số hệ thống}

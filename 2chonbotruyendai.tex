@@ -1,144 +1,151 @@
 \section{Chọn bộ truyền đai}
 \subsection{Chọn loại đai}
-Dựa vào công suất động cơ là $P_{dc} = 4.275 kW$ và số vòng quay $n_{dc} = 950$ vòng/phút và hình 4.1 tài liệu [1]\\
-$\Rightarrow$ Chọn đai loại C \\
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{pictures/chonloaidai.png}
-\end{figure}
+Dựa vào công suất động cơ là $P_{dc} = 4.275 kW$ và số vòng quay $n_{dc} = 1450$ vòng/phút \\
+$\Rightarrow$ Chọn đai loại A \\    
 
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline 
+    Ký hiệu đai & $b_p$  & $b_0$  & h  & $y_0$ (mm) & A ($mm^2$) & Chiều dài đai (m) & $d_{1min} (mm)$ \\ \hline
+    B & 11 & 13 & 8 & 2.8 & 81 & 560 $\div$ 4000 & 90 \\ \hline
+\end{tabular}
 \subsection{Tính đường kính bánh đai nhỏ}
-Theo dãy giá trị tiêu chuẩn tài liệu [1], ta chọn $d_1 = 280 (mm)$.\\
+Đường kính bánh đai nhỏ $d_1 = 1,2d_{min}$ với $d_{min} = 90 (mm)$. Vậy $d_1 = 90 \cdot 1.2=108(mm)$.
+Chọn theo dãy giá trị tiêu chuẩn, ta chọn $d_1 = 112 (mm)$.\\
 Vận tốc dài trên bánh đai nhỏ:\\
 \[
-    v_1 = \frac{\pi d_1 n_1}{60000} = \frac{\pi \cdot 280 \cdot 950}{60000} = 13.928 (m/s) < 25 (m/s)
+    v_1 = \frac{\pi.d_1.n_1}{60000} = \frac{\pi.112.1450}{60000} = 8.503 (m/s) < 25 (m/s)
 \]  
-$\Rightarrow$ Thỏa điều kiện $v_1$ < 25 (m/s) \\
+$\Rightarrow$ Thỏa điều kiện < 25 (m/s) \\
 \subsection{Chọn hệ số trượt tương đối và tính đường kính bánh đai lớn}
-Chọn hệ số trượt tương đối $\xi = 0.02$ \\
+Chọn hệ số trượt tương đối $\xi = 0.01$ \\
 Từ công thức tỉ số của bộ truyền đai: \\
 \[
     u_d = \frac{d_2}{d_1(1 - \xi)}
 \]
 \[
-    \Rightarrow d_2 = u_d \cdot d_1(1 - \xi) = 2.665 \cdot 280(1 - 0,02) = 761.428 (mm)
+    \Rightarrow d_2 = u_d.d_1(1 - \xi) = 2.44 \cdot 112(1 - 0,01) = 270.55 (mm)
 \]
-Theo bảng 4.21 tài liệu [1], ta chọn $d_2 = 710 (mm)$
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{pictures/bang4.21.png}
-\end{figure}
-Tính lại tỷ số truyền:
+Chọn theo dãy giá trị tiêu chuẩn, ta chọn $d_2 = 280 (mm)$ \\
+Tính lại tỷ số truyền: \\
 \[
-    u_d = \frac{d_2}{d_1(1 - \xi)} = \frac{710}{280 \cdot 0,98} = 2.587
+    u_d = \frac{d_2}{d_1(1 - \xi)} = \frac{280}{112 \cdot 0,99} = 2.52
 \]
-Tính sai lệch của tỷ số truyền:
+Để sai số tỷ số truyền bằng 0, ta tính lại đường kính bánh đai nhỏ: \\
 \[
-    \Delta u = \frac{2.665 - 2.587}{2.665} \cdot 100\% = 2,92\%
+    d_1 = \frac{d_2}{u_d \cdot (1- \xi)} = \frac{280}{2.44 \cdot (1-0.01)} = 115.91 (mm)
 \]
-$\Rightarrow$ Sai lệch của tỷ số truyền nằm trong phạm vi cho phép.
-
-\subsection{Tính khoảng cách trục a và chiều dài đai L}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{pictures/bang4.14.png}
-\end{figure}
-Dựa vào bảng 4.14 tài liệu [1], ta chọn $a = d_2 = 710 (mm)$ \\
-Kiểm tra điều kiện:
-\[
-    0.55(d_1 + d_2) + h \leq a \leq 2(d_1 + d_2)
-\]
-\[
-    0.55(280 + 710) + 10.5 \leq 710 \leq 2(280 + 710)
-\]
-\[
-    555 \leq 710 \leq 1980 
-\]
-$\Rightarrow$ Chọn a = 710 (mm) thỏa điều kiện. \\
+\subsection{Chọn khoảng cách trục a}
+Theo các thông số $u_d = 2.44$ và $d_2 = 280mm$ $\Rightarrow a = 1,2d_2 = 336 (mm)$ 
 Chiều dài đai: \\
 \[
-    L = 2a + \pi\frac{(d_1 + d_2)}{2} + \frac{(d_2 - d_1)^2}{4a} = 2 \cdot 710 + \pi\frac{(280 + 710)}{2} + \frac{(710 - 280)^2}{4 \cdot 710} =  3040.2(mm)
+    L = 2a + \pi\frac{(d_1 + d_2)}{2} + \frac{(d_2 - d_1)^2}{4a} = 2.336 + \pi\frac{(115.91 + 280)}{2} + \frac{(280 - 115.91)^2}{4.336} = 1313.93 (mm)
 \]
-$\Rightarrow$ Chọn chiều dài đai L = 3150 mm theo bảng 4.13. \\
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{pictures/bang4.13.png}
-\end{figure}
-Kiểm nghiệm đai về tuổi thọ
-\[
-    i = \frac{v}{L} = \frac{13.928}{3.150} = 4.42/s < i_{max} = 10/s
-\]
+$\Rightarrow$ Chọn chiều dài đai L = 1400 mm theo dãy giá trị tiêu chuẩn. \\
 Tính lại khoảng cách trục: 
 \[
-    a = \frac{\lambda + \sqrt{\lambda^2 - 8\Delta^2}}{4} = \frac{1594.911 + \sqrt{1594.911^2 - 8 \cdot 215^2}}{4} = 767 (mm)
-\]
-Trong đó:
-\begin{itemize}
-    \item $\lambda = L - \frac{\pi(d_1 + d_2)}{2} = 3150 - \frac{\pi(280+710)}{2} = 1594.911$ 
-    \item $\Delta = \frac{d_2-d_1}{2} = \frac{710-280}{2} = 215$
-\end{itemize}
-
-\subsection{Tính góc ôm đai}
-\[
-    \alpha_1 = 180 - 57\frac{d_2 - d_1}{a} = 180 - 57\frac{710 - 280}{767} = 148^{\circ} > a_{min} = 120^{\circ}
-\]
-
-\subsection{Xác định số đai}
-Số đai z được tính theo công thức: 
-\[
-    z = \frac{P_1K_d}{[P_0]C_\alpha C_L C_u C_z}
+    k = L - \pi\frac{d_1 + d_2}{2} = 1400 - \pi\frac{115.91 + 280}{2} =778.106 (mm)
 \]
 \[
-    = \frac{4.275 \cdot 1.25}{3.52 \cdot 0.92 \cdot 1.07 \cdot 1.136 \cdot 1} = 1.36
+    \Delta = \frac{d_2 - d_1}{2} = \frac{280 - 115.91}{2} = 82.045 (mm)
 \]
-Trong đó:
-\begin{itemize}
-    \item $P_1 = 4.275 (kW)$ - công suất trên trục bánh dẫn
-    \item $K_d = 1.25$ - hệ số tải trọng động
-    \item $[P_0] = 3.52 (kW)$ - ctrị số công suất cho phép (bảng 4.19)
-    \item $C_\alpha = 0.92$ - hệ số ảnh hưởng góc ôm đai (bảng 4.15)
-    \item $C_L = 1.07$ - hệ số ảnh hưởng chiều dài đai (bảng 4.16)
-    \item $C_u = 1.136$ - hệ số ảnh hưởng của tỉ số truyền (bảng 4.17)
-    \item $C_z = 1$ - hệ số ảnh hưởng sự phân bố không đều tải trọng các dây đai (bảng 4.18)
-\end{itemize}   
-Lấy z = 1 đai. \\
-
-
-
-
-
+\[
+    a = \frac{k + \sqrt{k^2 - 8\Delta^2}}{4} = \frac{778.106 + \sqrt{778.106^2 - 8\cdot82.045^2}}{4} = 380.2 (mm)
+\]
+Kiểm tra a thỏa điều kiện nếu giá trị a vừa tính thỏa giá trị khoảng cách trục nhỏ
+nhất được xác định theo công thức : \\
+\[
+    2(d_1+d_2) \geq a \geq 0,7(d_1+d_2)
+\]
+\[
+    2(115.91+280) \geq a \geq 0,7(115.91+280)
+\]
+\[
+    791.82 \geq a \geq 277.173
+\]
+$\Rightarrow$ a = 380.2 (mm) thỏa điều kiện. \\
+\cleardoublepage
+\subsection{Tính toán vận tốc đai và số truyền đai}
+Vận tốc dây đai: \\
+\[
+    v = \frac{\pi.d_1.n_1}{60000} = \frac{\pi \cdot 115.91 \cdot 1450}{60000} = 8.8 (m/s)
+\]
+Số vòng chạy đai trong 1 giây: \\
+\[
+    i = \frac{v_1}{L} = \frac{8.8}{1400.10^{-3}} = 6.286s^{-1} 
+\]
+$\Rightarrow$ Thỏa điều kiện $i \leq [i] = 10s^{-1}$ \\
+\subsection{Tính góc ôm đai bánh nhỏ}
+\[
+    \alpha_1 = 180 - 57\frac{d_2 - d_1}{a} = 180 - 57\frac{280 - 115.19}{380.2} = 155.29^{\circ}
+\]
+\subsection{Các hệ số sử dụng}
+Hệ số xét đến ảnh hưởng góc ôm đai: \\
+\[
+    C_{\alpha} = 1.24(1 - e^{\frac{-\alpha_1}{110}}) = 1.24(1 - e^{\frac{-155.29}{110}}) = 0.938 \\
+\]
+Hệ số xét đến ảnh hưởng vận tốc: \\
+\[
+    C_v = 1 - 0,05(0,01v^2 - 1) = 1 - 0,05(0,01.8.8^2 - 1) = 1,011 \\
+\]
+Hệ số xét đến ảnh hưởng tỷ số truyền u: \\
+\[
+    C_u = 1,14 (v > 2.5 m/s)
+\]
+Hệ số xét đến ảnh hưởng của chiều dài đai L: \\
+\[
+    C_L = \sqrt[6]{\frac{L}{L_0}} = \sqrt[6]{\frac{1400}{1700}} = 0,968
+\]
+Hệ số xét đến sự ảnh hưởng của sự phân bố không đều tải trọng giữa các dây đai: \\
+Chọn sơ bộ $C_z = 0.95$ \\
+Hệ số xét đến ảnh hưởng của chế độ tải trọng: \\ 
+Chọn sơ bộ $C_r = 0.9$ \\   
+Chọn công suất có ích cho phép theo GOST 1284.3 - 96, ta có: \\
+Đai loại A, $d_1 = 115.91 mm$, $v_1 = 8.8 m/s$ 
+$\Rightarrow$ Chọn $[P_0] = 1,80$ \\
+Tính số dây đai theo công thức: \\
+\[
+    z \geq \frac{P_1}{[P_0].C_{\alpha}.C_u.C_L.C_z.C_r.C_v} = \frac{4.102}{1.8\cdot 0.938\cdot 1.14\cdot 0.968\cdot 0.95\cdot 0.9\cdot 1,011} = 2.55
+\]
+$\Rightarrow$ Chọn z = 3 dây đai\\
+Kiểm nghiệm lại $C_z$: vì z = 3 nên $C_z$ = 0,95 như đã chọn sơ bộ.
+\subsection{Lực trên dây đai}
+Tổng lực căn đai ban đầu trên cả  dây đai: \\
+\[
+    F_0 = z\cdot A\cdot [\sigma_0] = 3\cdot 81\cdot 1 = 243 (N)
+\]
+Trong đó: Đối với đai thang, $\sigma_0 \leq 1,5$ MPa nên ta chọn $\sigma_0 = 1$ MPa, z = 3, $A_0$ = 81 $mm^2$ \\
 Lực căng trên mỗi dây đai: \\
 \[
-    \frac{F_0}{z} = \frac{414}{2} = 207 (N)
+    \frac{F_0}{z} = \frac{243}{3} = 81 (N)
 \]
-Tổng lực vòng có ích trên cả 2 đai: \\
+Tổng lực vòng có ích trên cả 3 đai: \\
 \[
-    F_t =\frac{1000P_1}{v_1} = \frac{1000.3,212}{4,0422} = 794,6 (N)
+    F_t =\frac{1000P_1}{v_1} = \frac{1000\cdot 4.102}{8.8} = 466.136 (N)
 \]
 Lực vòng có ích trên mỗi dây đai: \\
 \[
-    \frac{F_t}{z} = \frac{794,6}{2} = 397,3 (N)
+    \frac{F_t}{z} = \frac{466.136}{3} = 155.379 (N)
 \]
 \subsection{Lực tác dụng lên trục}
 \[
-    F_r \approx 2F_0\sin(\frac{\alpha_1}{2}) = 2.414\sin(\frac{159}{2}) = 833,8 (N) 
+    F_r \approx 2F_0\sin(\frac{\alpha_1}{2}) = 2\cdot 243\sin(\frac{155.29}{2}) = 474.744 (N) 
 \]
 \subsection{Ứng suất lớn nhất trong dây đai}
 \[
     \sigma_{max} = \sigma_1 + \sigma_v + \sigma_{F1} = \sigma_0 + 0,5\sigma_t + \sigma_v + \sigma_{F1} 
 \]
 \[
-    = \frac{F_0}{A} + 0,5.\frac{F_t}{A} + \rho.v^2.10^{-6} + E.\frac{2.y_0}{d_1} 
+    = \frac{F_0}{A} + 0.5\cdot \frac{F_t}{A} + \rho \cdot v^2\cdot 10^{-6} + E\cdot \frac{2\cdot y_0}{d_1} 
 \]
 \[
-    = \frac{414}{2.138} + 0,5.\frac{794,6}{2.138} + 1200.4,0422^2.10^{-6} + 100.\frac{2.4}{160} = 7,96 (MPa) \\
+    = \frac{243}{3\cdot 81} + 0.5\cdot \frac{466.136}{3\cdot 81} + 1000\cdot 8.8^2\cdot 10^{-6} + 60\cdot \frac{2\cdot 2.8}{115.19} = 6.9 (MPa) \\
 \]
 \subsection{Tuổi thọ dây đai}
 \[
-    L_h = \frac{(\frac{\sigma_r}{\sigma_{max}})^m.10^7}{2.3600.i} = \frac{(\frac{9}{7,96})^8.10^7}{2.3600.2,526} = 1468,5 (h)
+    L_h = \frac{(\frac{\sigma_r}{\sigma_{max}})^m\cdot 10^7}{2\cdot 3600\cdot i} = \frac{(\frac{9}{6.9})^8\cdot10^7}{2\cdot3600\cdot6.286} = 1520.18 (h)
 \]
 Trong đó:\\
 $\sigma_r$ = 9 (MPa) - giới hạn mỏi của đai thang.\\
-m = 8 - chỉ số mũ của đường cong mỏi đối với đai dẹt\\
-i = 2,526 ($s^{-1}$) - số vòng chạy của đai trong một giây\\
+m = 8 - chỉ số mũ của đường cong mỏi đối với đai thang\\
+i = 6.286 ($s^{-1}$) - số vòng chạy của đai trong một giây\\
 \cleardoublepage
