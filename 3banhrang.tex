@@ -45,6 +45,7 @@ Do $N_{HE_1} > N_{HO_1}, N_{HE_2} > N_{HO_2}$, ta có thể xem như $K_{HL} = 1
 Tương tự ta có $K_{FL} = 1$ \\
 Do bộ truyền quay 1 chiều nên $K_{FC} = 1$ \\
 Với độ cứng bề mặt của vật liệu làm bánh răng, từ bảng 6.2 [1], chọn $s_F=1.75, s_H=1.1$ \\
+\cleardoublepage
 \subsection{Ứng suất cho phép}
 \subsubsection{Ứng suất tiếp xúc cho phép của bánh dẫn và bánh bị dẫn}
 \[
@@ -72,129 +73,144 @@ Như vậy, ứng suất tiếp xúc cho phép của cả bộ truyền là:
 \[
     [\sigma_F]_{max} = 0.8 \cdot \sigma_{ch} = 0.8 \cdot 650 = 520MPa
 \]
-% \subsection{Khoảng cách trục}
-% Do bánh răng nằm đối xứng các ổ trục nên $\Psi_{ba} = 0,3 \div 0,5$, chọn $\Psi_{ba} = 0,4$ \\
-% Khi đó $\Psi_{bd} = \frac{\Psi_{ba} \cdot (u+1)}{2} = \frac{0,4 \cdot (6,3+1)}{2} = 1,46$ \\
-% Từ đó tra theo bảng 6.4 ta chọn: $K_{H\beta} = 1,07$, $K_{F\beta} = 1,14$ \\
-% Tính khoảng cách trục: \\
-% \[
-%     a_w = 500 \cdot (u+1) \cdot \sqrt[3]{\frac{T_1 \cdot K_{H\beta}}{\Psi_{ba} \cdot [\sigma_H]^2 \cdot u}} = 500 \cdot (6,3+1) \cdot \sqrt[3]{\frac{63,73 \cdot 1,07}{0,4 \cdot 408,68^2 \cdot 6,3}} = 198,98 (mm)
-% \]
-% Theo tiêu chuẩn ta chọn $a_w = 200mm$
-% \subsection{Môđun răng}
-% \[
-%     m_n = (0,01 \div 0,02) \cdot a_w = 2 \div 4
-% \]
-% Theo tiêu chuẩn ta chọn $m_n = 4$
-% \subsection{Số răng}
-% Từ điều kiện $20^\circ \leq \beta \leq 8^\circ$ \\
-% \[
-%     \Leftrightarrow \frac{2 \cdot a_w \cdot \cos8^\circ}{m_n \cdot (u+1)} \leq z_1 \leq \frac{2 \cdot a_w \cdot \cos20^\circ}{m_n \cdot (u+1)}
-% \]
-% \[
-%     \Leftrightarrow \frac{2 \cdot 200 \cdot \cos8^\circ}{4 \cdot (6,3+1)} \leq z_1 \leq \frac{2 \cdot 200 \cdot \cos20^\circ}{4 \cdot (6,3+1)}
-% \]
-% \[
-%     \Leftrightarrow 13,56 \leq z_1 \leq 12,87
-% \]
-% $\Rightarrow$ Chọn $z_1 = 13 \Rightarrow z_2 = u.z_1 = 6,3.13 = 81,9$ \\
-% $\Rightarrow$ Chọn $z_2 = 82$ \\
-% Góc nghiêng răng: 
-% \[
-%     \beta = \arccos\frac{m_n \cdot (z_1+z_2)}{2 \cdot a_w} = \arccos\frac{4 \cdot (13+82)}{2 \cdot 200} = 18,2^\circ
-% \]
-% \subsection{Tỉ số truyền sau khi chọn răng}
-% \[
-%     u = \frac{z_2}{z_1} = \frac{82}{13} = 6,308
-% \]
-% \subsection{Các thông số hình học}
-% Đường kính vòng chia: \\
-% \[
-%     d_1 = \frac{m_n \cdot z_1}{\cos\beta} = \frac{4 \cdot 13}{\cos18,2^\circ} = 54,738 (mm)
-% \]
-% \[
-%     d_2 = \frac{m_n \cdot z_2}{\cos\beta} = \frac{4 \cdot 82}{\cos18,2^\circ} = 345,27 (mm)
-% \]
-% Đường kính vòng đỉnh: \\
-% \[
-%     d_{a1} = d_1 + 2 \cdot m_n = 54,738 + 2 \cdot 4 = 62,738 (mm)
-% \]
-% \[
-%     d_{a2} = d_2 + 2 \cdot m_n = 354,27 + 2 \cdot 4 = 362,27 (mm)
-% \]
-% Đường kính vòng đáy: \\ 
-% \[
-%     d_{f1} = d_1 - 2,5 \cdot m_n = 62,738 - 2,5 \cdot 4 = 44,738 (mm)
-% \]
-% \[
-%     d_{f2} = d_2 - 2,5 \cdot m_n = 345,27 - 2,5 \cdot 4 = 335,27 (mm)
-% \]
-% Tính lại khoảng cách trục: \\
-% \[
-%     a_w = \frac{m_n \cdot (z_1+z_2)}{2 \cdot \cos\beta} = \frac{4 \cdot (13+82)}{2 \cdot \cos18,2^\circ} = 200(mm)
-% \]
-% Chiều rộng vành răng: 
-% \begin{itemize}
-%     \item Bánh bị dẫn: $b_2 = \Psi_{ba} \cdot a_w = 0,4 \cdot 200 = 80(mm)$
-%     \item Bánh dẫn: $b_1 = b_2 + 5 = 85(mm)$
-% \end{itemize}
-% \subsection{Vận tốc vòng bánh răng}
-% \[
-%     v = \frac{\pi \cdot d_1 \cdot n_1}{60000} = \frac{\pi \cdot 54,738 \cdot 482,5}{60000} = 1,38 (m/s)
-% \]
-% Theo bảng 6.3 ta chọn cấp chính xác 9 với $v_{gh} = 6 m/s$
-% \subsection{Tính toán kiểm nghiệm giá trị ứng suất tiếp xúc}
-% Theo bảng 6.6 ta chọn hệ số tải trọng động $K_{HV} = 1,11$, $K_{FV} = 1,22$ \\
-% \[
-%     \sigma_H = \frac{z_M \cdot z_H \cdot z_\epsilon}{d_1} \cdot \sqrt{\frac{2 \cdot T_1 \cdot 10^3 \cdot K_{H\beta} \cdot K_{HV} \cdot (u+1)}{b_w \cdot u}} 
-% \]
-% \[
-%     = \frac{190 \cdot 2,3847 \cdot 0,8124}{54,738} \cdot \sqrt{\frac{2 \cdot 63,73 \cdot 10^3 \cdot 1,07 \cdot 1,11 \cdot (6,3+1)}{80 \cdot 6,3}} = 314,887 (MPa)
-% \]
-% Với:
-% \begin{itemize}
-%     \item $Z_M = 190$ vì vật liệu bằng thép
-%     \item $Z_H = \sqrt{\frac{4 \cdot \cos\beta}{\sin(2 \cdot \alpha_{tw})}} = \sqrt{\frac{4 \cdot \cos18,2}{\sin(2 \cdot 20,9637)}} = 2,3847$
-%     \item $\alpha_{tw} = \arctan(\frac{\tan\alpha_{nw}}{\cos\beta}) = \arctan(\frac{\tan20}{\cos18,2}) = 20,9637$
-%     \item $Z_\epsilon = \sqrt{\frac{1}{\epsilon_\alpha}} = \sqrt{\frac{1}{1,515}} = 0,8124$
-%     \item $\epsilon_\alpha = [1,88-3,2 \cdot (\frac{1}{z_1}+\frac{1}{z_2})] \cdot \cos\beta = [1,88-3,2 \cdot (\frac{1}{13}+\frac{1}{82})] \cdot \cos18,2 = 1,515$
-% \end{itemize}
-% \[
-%     \sigma_H = 314,887 MPa \leq 441,82 MPa
-% \]
-%     $\Rightarrow \sigma_H \leq [\sigma_H]$ thỏa mãn\\
-% \subsection{Số răng tương đương}
-% \[
-%     z_{v1} = \frac{z_1}{\cos^3(\beta)} = \frac{13}{\cos^3(18,2)} = 13,685 \Rightarrow z_{v1} = 14
-% \]
-% \[
-%     z_{v2} = \frac{z_2}{\cos^3(\beta)} = \frac{82}{\cos^3(18,2)} = 86,32 \Rightarrow z_{v1} = 87
-% \]
-% \subsection{Hệ số dạng răng}
-% \begin{itemize}
-%     \item Đối với bánh dẫn: $Y_{F1} = 3,47 + \frac{13,2}{z_{v1}} = 3,47 + \frac{13,2}{14} = 4,413$
-%     \item Đối với bánh bị dẫn: $Y_{F2} = 3,47 + \frac{13,2}{z_{v2}} = 3,47 + \frac{13,2}{87} = 3,622$
-% \end{itemize}
-% \subsection{Ứng suất uốn tính toán}
-% Đặc tính so sánh độ bền uốn:
-% \begin{itemize}
-%     \item Bánh dẫn: $\frac{[\sigma_{F1}]}{Y_{F1}} = \frac{257,143}{4,413} = 58,27$
-%     \item Bánh bị dẫn: $\frac{[\sigma_{F2}]}{Y_{F2}} = \frac{241,7}{3,622} = 66,73$
-% \end{itemize}
-% $\Rightarrow$ Ta kiểm tra độ bền uốn theo bánh dẫn có độ bền thấp hơn:\\
-% Ứng suất uốn tính toán:
-% \[
-%     \sigma_{F1} = \frac{Y_{F1} \cdot F_t \cdot K_{F1} \cdot Y_\epsilon \cdot Y_\beta}{b_2 \cdot m} = \frac{4,413 \cdot 2328,547 \cdot 1,39 \cdot 0,66 \cdot 0,6985}{80 \cdot 4} = 20,577 (MPa)
-% \] 
-% Với: 
-% \begin{itemize}
-%     \item $Y_\epsilon = \frac{1}{\epsilon_\alpha} = \frac{1}{1,515} = 0,66$
-%     \item $F_t = 2 \cdot 10^3 \cdot \frac{T_1}{d_{w1}} = 2 \cdot 10^3 \cdot \frac{63,73}{54,738} = 2328,547$
-%     \item $Y_\beta = 1 - \epsilon_\beta \cdot \frac{\beta}{120} = 1 - 1,988 \cdot \frac{18,2}{120} = 0,6985$
-%     \item $\epsilon_\beta = b_w \cdot \frac{\sin\beta}{\pi \cdot m} = 80 \cdot \frac{\sin18,2}{\pi \cdot 4} = 1,988$
-%     \item $K_{F1} = K_{F\alpha} \cdot K_{F\beta} \cdot K_{FV} = 1 \cdot 1,14 \cdot 1,22 = 1,39$
-%     \item $K_{F\alpha} = \frac{4 + (\epsilon_\alpha - 1) \cdot (n_{cx} - 5)}{4 \cdot \epsilon_\alpha} = \frac{4 + (1,515 - 1) \cdot (9 - 5)}{4 \cdot 1,515} = 1$
-% \end{itemize}
-% $\Rightarrow \sigma_{F1} < [\sigma_{F1}] = 257,143$ MPa do đó độ bền uốn thỏa\\
 
-% \cleardoublepage
+\subsection{Khoảng cách trục}
+Do bánh răng nằm đối xứng các ổ trục nên $\Psi_{ba} = 0.3 \div 0.5$, chọn $\Psi_{ba} = 0.4$  
+Khi đó $\Psi_{bd} = 0.53\Psi_{ba}(u+1) = 1.272$  
+Từ đó tra theo bảng 6.7 \cite{reference} ta chọn: $K_{HB} = 1.06$, $K_{FB} = 1.14$  \\
+Khoảng cách trục sơ bộ:
+\[
+a_w = 43 \cdot (u+1) \cdot \sqrt{\frac{T_1 \cdot K_{H\beta}}{\Psi_{ba} \cdot [\sigma_H]^2 \cdot u}} = 130.73(mm)
+\]
+Theo tiêu chuẩn ta chọn $a_w = 160mm$
+
+\subsection{Môđun răng}
+
+\[
+m_n = (0.01 \div 0.02) \cdot a_w = 1.6 \div 3.2
+\]
+Theo tiêu chuẩn ta chọn $m_n = 3$
+\subsection{Số răng}
+Từ điều kiện $20^\circ \leq \beta \leq 8^\circ$
+\[
+\Leftrightarrow \frac{2 \cdot a_w \cdot \cos 8^\circ}{m_n \cdot (u+1)} \leq z_1 \leq \frac{2 \cdot a_w \cdot \cos 20^\circ}{m_n \cdot (u+1)}
+\]
+\[
+\Leftrightarrow \frac{2 \cdot 160 \cdot \cos 8^\circ}{3 \cdot (5+1)} \leq z_1 \leq \frac{2 \cdot 160 \cdot \cos 20^\circ}{3 \cdot (5+1)}
+\]
+\[
+\Leftrightarrow 16.7 \leq z_1 \leq 17.6
+\]
+\[
+\Rightarrow \text{Chọn } z_1 = 17 \Rightarrow z_2 = u \cdot z_1 = 5.17 = 85
+\]
+\[
+\Rightarrow \text{Chọn } z_2 = 85
+\]
+Góc nghiêng răng:
+\[
+\beta = \arccos \left( \frac{m_n \cdot (z_1 + z_2)}{2 \cdot a_w} \right) = \arccos \left( \frac{3 \cdot (17+85)}{2 \cdot 160} \right) = 17.01^\circ
+\]
+
+\subsection{Các thông số hình học}
+
+Đường kính lăn của bánh dẫn:
+\[
+d_{w1} = \frac{2a_w}{m_n + 1} = \frac{2 \cdot 160}{5 + 1} = 53.33 mm
+\]
+Chiều rộng vành răng:
+\[
+b_w = \Psi_{ba} \cdot a_w = 0.4 \cdot 160 = 64mm
+\]
+Tính lại khoảng cách trục:
+\[
+a_w = \frac{m_n \cdot (z_1 + z_2)}{2 \cdot \cos \beta} = \frac{3 \cdot (17 + 85)}{2 \cdot \cos 17.01^\circ} = 160(mm)
+\]
+\[
+\Rightarrow \text{Không cần dịch chỉnh răng, nên } d_{w1} = d_{w2} = d_2
+\]
+\subsection{Kiểm nghiệm bánh răng theo độ bền tiếp xúc}
+\subsubsection{Xác định các hệ số tải trọng}
+Vận tốc vòng của bánh dẫn:
+\[
+v = \frac{\pi \cdot d_1 \cdot n_1}{60000} = \frac{\pi \cdot 53.33 \cdot 594.26}{60000} = 1.66(m/s)
+\]
+Theo bảng 6.13 \cite{reference}, ta chọn cặp chính xác bậc 6, như vậy hệ số sai lệch bước răng $g_0 = 38$  \\
+Theo bảng 6.15 \cite{reference}, ta có $\delta_H = 0.002$, $\delta_F = 0.006$  \\
+Theo bảng 6.14 \cite{reference} ta có hệ số phân bố không đều tải trọng giữa các đôi răng:\\
+\[
+K_{H\alpha} = 1.04, \quad K_{F\alpha} = 1.13
+\]
+Vận tốc:
+\[
+v_H = \delta_H \cdot g_0 \cdot v\sqrt{\frac{a_w}{u_{br}}} = 7.135(m/s)
+\]
+Hệ số tải trọng động trong vùng ăn khớp:
+\[
+K_{Hv} = 1 + \frac{v_H \cdot b_w \cdot d_{w1}}{2T_1 \cdot K_{H\beta} \cdot K_{H\alpha}} = 1.181
+\]
+Như vậy hệ số tải trọng động tiếp xúc $K_H$:
+\[
+K_H = K_{H\alpha} \cdot K_{H\beta} \cdot K_{Hv} = 1.302
+\]
+
+\subsubsection{Xác định các hệ số xét đến hình dạng, vật liệu và trùng khớp}
+Với:
+\begin{itemize}
+    \item $Z_M = 274 \text{ tra từ bảng 6.5 \cite{reference}}$
+    \item $Z_H = \sqrt{\frac{2 \cos \beta_b}{\sin(2\cdot\alpha_{tw})}} = \sqrt{\frac{2\cdot cos15.96}{sin(2\cdot 20.84)}} = 1.7$
+    \item $\alpha_{tw} = \arctan \left( \frac{tan\alpha_{nw}}{cos_\beta} \right) = \arctan \left( \frac{tan20}{cos17.01} \right) = 20.84^\circ$
+    \item $\beta_b = arctan(cos\alpha_t\cdot tan\beta) = 15.96^\circ$
+    \item $Z_\epsilon = \sqrt{\frac{1}{\epsilon_\alpha}} = \frac{1}{1.581} = 0.795$
+    \item $\epsilon_\alpha = [1.88-3.2\cdot(\frac{1}{z_1}+\frac{1}{z_2})].cos\beta = [1.88 - 3.2\cdot (\frac{1}{17} + \frac{1}{85})]\cdot cos17.01 = $ 
+
+\end{itemize}
+\subsection{Kiểm nghiệm bánh răng theo độ bền uốn}
+
+\subsubsection{Hệ số tải trọng động trong vùng ăn khớp}
+
+\[
+K_{Fv} = 1 + \frac{v_P \cdot b_w \cdot d_{w1}}{2 \cdot T_1 \cdot K_{FB} \cdot K_{Fa}} = 1.54
+\]
+
+Trong đó:
+
+\[
+v_P = \delta_F \cdot g_0 \cdot \sqrt{\frac{v_{br}}{u}} = 21.4(m/s)
+\]
+
+Hệ số tải trọng uốn:
+
+\[
+K_F = K_{Fa} \cdot K_{FB} \cdot K_{Fv} = 1.986
+\]
+
+\subsubsection{Hệ số trùng khớp răng}
+
+\[
+Y_\epsilon = \frac{1}{\epsilon_\alpha} = 0.632
+\]
+
+\subsubsection{Hệ số kể đến độ nghiêng răng}
+
+\[
+Y_\beta = 1 - \frac{\beta}{140} = 0.878
+\]
+Hệ số số răng $Y_{F1}, Y_{F2}$ tra theo số răng tương đương $z_{v1} = \frac{z_1}{\cos^3 \beta}$ từ bảng 6.18 \cite{reference}:
+
+\[
+Y_{F1} = 4.08, \quad Y_{F2} = 3.6
+\]
+
+\subsubsection{Tính toán ứng suất uốn}
+
+Như vậy ứng suất uốn của bánh dẫn và bánh bị dẫn:
+
+\[
+\sigma_{F1} = \frac{2T_1 K_F Y_\epsilon Y_\beta Y_{F1}}{b_w d_{w1} m_n} = 53.75 MPa < [\sigma_{F1}]
+\]
+\[
+\sigma_{F2} = \frac{\sigma_{F1} Y_{F2}}{Y_{F1}} = 60.91 MPa < [\sigma_{F2}]
+\]
+Vậy thông số hình học của bộ truyền thỏa điều kiện bền uốn.
+\cleardoublepage
