@@ -1,15 +1,15 @@
-\section{Chọn động cơ điện}
-\subsection{Xác định công suất bộ phận công tác}
+\chapter{Chọn động cơ điện}
+\section{Xác định công suất bộ phận công tác}
 \[
     P_{ct} = \frac{F.v}{1000} = \frac{2800 \cdot 1.4}{1000} = 3.92 kW
 \]
-\subsection{Số vòng quay của bộ phận công tác}
+\section{Số vòng quay của bộ phận công tác}
 \begin{center}
 \[
     n_{ct} = \frac{60000.v}{\pi.D} = \frac{60000\cdot1.4}{\pi\cdot225} = 118.84 (v/ph)
 \]
 \end{center}
-\subsection{Hiệu suất của các bộ truyền và các cặp ổ trong hệ thống dẫn động}
+\section{Hiệu suất của các bộ truyền và các cặp ổ trong hệ thống dẫn động}
 \begin{itemize}
     \item Bộ truyền đai: $\eta_{d} = 0.96$ 
     \item Bộ truyền bánh răng: $\eta_{br} = 0.98$
@@ -20,11 +20,11 @@ Hiệu suất hệ thống:
 \[
     \eta _{ch} = \eta_{d}\eta_{br}\eta_{nt}(\eta_{ol})^3 = 0.96 \cdot 0.98 \cdot 0.99 \cdot 0.995 = 0.9175
 \]
-\subsection{Công suất động cơ cần thiết}
+\section{Công suất động cơ cần thiết}
 \[
     P_{dc} = \frac{P_{ct}}{\eta_{ch}} = \frac{3.92}{0.9175} = 4.273 kW\\
 \]    
-\subsection{Dãy tỉ số truyền nên dùng cho các bộ truyền trong hệ thống}
+\section{Dãy tỉ số truyền nên dùng cho các bộ truyền trong hệ thống}
 
 \begin{itemize}
     \item Bộ truyền đai thang: $u_{d} = 2...3$
@@ -37,7 +37,7 @@ Như vậy tỉ số truyền chung của hệ thống là:
     u_{ch} =\frac{n_{dc}}{n_{ct}} = \frac{1450}{118.82} = 12.202
 \]
 
-\subsection{Phân phối tỉ số truyền}
+\section{Phân phối tỉ số truyền}
 Tỷ số truyền của cả hệ được xác định theo công thức:
 \[
     u_{ch} = u_d.u_{br} 
@@ -51,8 +51,8 @@ Như vậy:
     u_d = \frac{u_{ch}}{u_{br}} = \frac{12.202}{5} = 2.44
 \]
 
-\subsection{Tính toán công suất và momen trên các trục}
-\subsubsection{Tính toán công suất trên các trục}
+\section{Tính toán công suất và momen trên các trục}
+\subsection{Tính toán công suất trên các trục}
 Công suất trên trục công tác
 \[
     P_{ct} = \frac{F.v}{1000} = \frac{2800.1.4}{1000} = 3.92 kW
@@ -65,7 +65,7 @@ Công suất trên trục I:
 \[
     P_{I} = \frac{P_{II}}{\eta_{ol}.\eta_{br}} = \frac{4}{0.995 \cdot 0.98} = 4.102 kW \\
 \]
-\subsubsection{Tính toán momen trên các trục}
+\subsection{Tính toán momen trên các trục}
 Momen trên trục công tác:
 \[
     M_{lv} = 9.55 \cdot 10^6 \cdot \frac{P_{ct}}{n_{ct}} = 9.55 \cdot 10^6 \cdot \frac{3.92}{118.82} = 315053.5 (N.mm) \\
@@ -83,7 +83,7 @@ Momen trên trục động cơ:
     M_{dc} = 9.55 \cdot 10^6 \cdot \frac{P_{dc}}{n_{dc}} = 9.55 \cdot 10^6 \cdot \frac{4.275}{1450} = 28139.71 (N.mm) \\
 \]
 
-\subsection{Bảng thông số hệ thống}
+\section{Bảng thông số hệ thống}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{pictures/bangdactinh.png}

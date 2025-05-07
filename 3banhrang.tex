@@ -1,8 +1,8 @@
-\section{Tính toán hộp giảm tốc bánh răng nghiêng 1 cấp}
-\subsection{Chọn vật liệu cho bánh dẫn và bánh bị dẫn}
+\chapter{Tính toán hộp giảm tốc bánh răng nghiêng 1 cấp}
+\section{Chọn vật liệu cho bánh dẫn và bánh bị dẫn}
 Dựa vào bảng 6.1 [1], chọn vật liệu chế tạo cặp bánh răng là thép C45 tôi cải thiện với độ cứng bề mặt là $HB_1=260$ cho bánh dẫn và $HB_2=240$ cho bánh bị dẫn.
 
-\subsection{Giới hạn mỏi tiếp xúc và giới hạn mỏi uốn}
+\section{Giới hạn mỏi tiếp xúc và giới hạn mỏi uốn}
 \[
     \sigma_{OH_{lim}} = 2HB + 70 
 \]
@@ -22,18 +22,18 @@ Dựa vào bảng 6.1 [1], chọn vật liệu chế tạo cặp bánh răng là
     \Rightarrow \sigma_{OF_{lim2}} = 1.8.240 = 432MPa
 \]
 
-\subsection{Tính toán các hệ số tuổi thọ và hệ số an toàn}
-\subsubsection{Số chu kỳ thay đổi ứng suất tiếp xúc cơ sở}
+\section{Tính toán các hệ số tuổi thọ và hệ số an toàn}
+\subsection{Số chu kỳ thay đổi ứng suất tiếp xúc cơ sở}
 \begin{center}
         $N_{HO_1} = 30.HB_1^{2,4} = 30.260^{2,4} = 1,875.10^7$ chu kỳ \\
         $N_{HO_2} = 30.HB_2^{2,4} = 30.240^{2,4} = 1,547.10^7$ chu kỳ \\
 \end{center}
-\subsubsection{Số chu kỳ thay đổi ứng suất uốn cơ sở}
+\subsection{Số chu kỳ thay đổi ứng suất uốn cơ sở}
 \[
     N_{FO_1} = N_{FO_2} = 4 \cdot 10^6
 \]
 
-\subsubsection{Số chu kỳ thay đổi ứng suất tương đương}
+\subsection{Số chu kỳ thay đổi ứng suất tương đương}
 Do bộ truyền chịu tải trọng tĩnh nên: 
 \[
     N_{FE_1} = N_{HE_1} = 60\cdot c \cdot n_1 \cdot L_h = 1198.03\cdot 10^6
@@ -46,15 +46,15 @@ Tương tự ta có $K_{FL} = 1$ \\
 Do bộ truyền quay 1 chiều nên $K_{FC} = 1$ \\
 Với độ cứng bề mặt của vật liệu làm bánh răng, từ bảng 6.2 [1], chọn $s_F=1.75, s_H=1.1$ \\
 \cleardoublepage
-\subsection{Ứng suất cho phép}
-\subsubsection{Ứng suất tiếp xúc cho phép của bánh dẫn và bánh bị dẫn}
+\section{Ứng suất cho phép}
+\subsection{Ứng suất tiếp xúc cho phép của bánh dẫn và bánh bị dẫn}
 \[
     [\sigma_{H_1}] = \frac{K_{HL_1}\sigma_{OH_{lim1}}}{s_H} = 536.36MPa
 \]
 \[
     [\sigma_{H_2}] = \frac{K_{HL_2}\sigma_{OH_{lim2}}}{s_H} = 500MPa
 \]
-\subsubsection{Ứng suất uốn cho phép của bánh dẫn và bánh bị dẫn}
+\subsection{Ứng suất uốn cho phép của bánh dẫn và bánh bị dẫn}
 \[
     [\sigma_{F_1}] = \frac{K_{FL_1}\sigma_{OF_{lim1}}K_{FC}}{s_F} = 267.43MPa
 \]
@@ -74,7 +74,7 @@ Như vậy, ứng suất tiếp xúc cho phép của cả bộ truyền là:
     [\sigma_F]_{max} = 0.8 \cdot \sigma_{ch} = 0.8 \cdot 650 = 520MPa
 \]
 
-\subsection{Khoảng cách trục}
+\section{Khoảng cách trục}
 Do bánh răng nằm đối xứng các ổ trục nên $\Psi_{ba} = 0.3 \div 0.5$, chọn $\Psi_{ba} = 0.4$  
 Khi đó $\Psi_{bd} = 0.53\Psi_{ba}(u+1) = 1.272$  
 Từ đó tra theo bảng 6.7 \cite{reference} ta chọn: $K_{HB} = 1.06$, $K_{FB} = 1.14$  \\
@@ -84,13 +84,13 @@ a_w = 43 \cdot (u+1) \cdot \sqrt{\frac{T_1 \cdot K_{H\beta}}{\Psi_{ba} \cdot [\s
 \]
 Theo tiêu chuẩn ta chọn $a_w = 160mm$
 
-\subsection{Môđun răng}
+\section{Môđun răng}
 
 \[
 m_n = (0.01 \div 0.02) \cdot a_w = 1.6 \div 3.2
 \]
 Theo tiêu chuẩn ta chọn $m_n = 3$
-\subsection{Số răng}
+\section{Số răng}
 Từ điều kiện $20^\circ \leq \beta \leq 8^\circ$
 \[
 \Leftrightarrow \frac{2 \cdot a_w \cdot \cos 8^\circ}{m_n \cdot (u+1)} \leq z_1 \leq \frac{2 \cdot a_w \cdot \cos 20^\circ}{m_n \cdot (u+1)}
@@ -112,7 +112,7 @@ Góc nghiêng răng:
 \beta = \arccos \left( \frac{m_n \cdot (z_1 + z_2)}{2 \cdot a_w} \right) = \arccos \left( \frac{3 \cdot (17+85)}{2 \cdot 160} \right) = 17.01^\circ
 \]
 
-\subsection{Các thông số hình học}
+\section{Các thông số hình học}
 
 Đường kính lăn của bánh dẫn:
 \[
@@ -129,8 +129,8 @@ a_w = \frac{m_n \cdot (z_1 + z_2)}{2 \cdot \cos \beta} = \frac{3 \cdot (17 + 85)
 \[
 \Rightarrow \text{Không cần dịch chỉnh răng, nên } d_{w1} = d_{w2} = d_2
 \]
-\subsection{Kiểm nghiệm bánh răng theo độ bền tiếp xúc}
-\subsubsection{Xác định các hệ số tải trọng}
+\section{Kiểm nghiệm bánh răng theo độ bền tiếp xúc}
+\subsection{Xác định các hệ số tải trọng}
 Vận tốc vòng của bánh dẫn:
 \[
 v = \frac{\pi \cdot d_1 \cdot n_1}{60000} = \frac{\pi \cdot 53.33 \cdot 594.26}{60000} = 1.66(m/s)
@@ -154,7 +154,7 @@ Như vậy hệ số tải trọng động tiếp xúc $K_H$:
 K_H = K_{H\alpha} \cdot K_{H\beta} \cdot K_{Hv} = 1.302
 \]
 
-\subsubsection{Xác định các hệ số xét đến hình dạng, vật liệu và trùng khớp}
+\subsection{Xác định các hệ số xét đến hình dạng, vật liệu và trùng khớp}
 Với:
 \begin{itemize}
     \item $Z_M = 274 \text{ tra từ bảng 6.5 \cite{reference}}$
@@ -165,9 +165,9 @@ Với:
     \item $\epsilon_\alpha = [1.88-3.2\cdot(\frac{1}{z_1}+\frac{1}{z_2})].cos\beta = [1.88 - 3.2\cdot (\frac{1}{17} + \frac{1}{85})]\cdot cos17.01 = $ 
 
 \end{itemize}
-\subsection{Kiểm nghiệm bánh răng theo độ bền uốn}
+\section{Kiểm nghiệm bánh răng theo độ bền uốn}
 
-\subsubsection{Hệ số tải trọng động trong vùng ăn khớp}
+\subsection{Hệ số tải trọng động trong vùng ăn khớp}
 
 \[
 K_{Fv} = 1 + \frac{v_P \cdot b_w \cdot d_{w1}}{2 \cdot T_1 \cdot K_{FB} \cdot K_{Fa}} = 1.54
@@ -185,13 +185,13 @@ Hệ số tải trọng uốn:
 K_F = K_{Fa} \cdot K_{FB} \cdot K_{Fv} = 1.986
 \]
 
-\subsubsection{Hệ số trùng khớp răng}
+\subsection{Hệ số trùng khớp răng}
 
 \[
 Y_\epsilon = \frac{1}{\epsilon_\alpha} = 0.632
 \]
 
-\subsubsection{Hệ số kể đến độ nghiêng răng}
+\subsection{Hệ số kể đến độ nghiêng răng}
 
 \[
 Y_\beta = 1 - \frac{\beta}{140} = 0.878
@@ -202,7 +202,7 @@ Hệ số số răng $Y_{F1}, Y_{F2}$ tra theo số răng tương đương $z_{v
 Y_{F1} = 4.08, \quad Y_{F2} = 3.6
 \]
 
-\subsubsection{Tính toán ứng suất uốn}
+\subsection{Tính toán ứng suất uốn}
 
 Như vậy ứng suất uốn của bánh dẫn và bánh bị dẫn:
 
@@ -213,4 +213,6 @@ Như vậy ứng suất uốn của bánh dẫn và bánh bị dẫn:
 \sigma_{F2} = \frac{\sigma_{F1} Y_{F2}}{Y_{F1}} = 60.91 MPa < [\sigma_{F2}]
 \]
 Vậy thông số hình học của bộ truyền thỏa điều kiện bền uốn.
+\subsection{Bảng thông số bộ truyền bánh răng}
+\subsection{Bôi trơn hộp giảm tốc}
 \cleardoublepage
