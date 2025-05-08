@@ -13,151 +13,123 @@
 \subsection{Xác định kích thước vỏ hộp}
 
 \begin{table}[H]
-\centering
-\renewcommand{\arraystretch}{1.4}
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{Tên gọi} & \textbf{Tên gọi} & \textbf{Kết quả} \\ \hline
-\multirow{3}{*}{Chiều dày} 
-    & Thân hộp, $\delta$ & $\delta = 0.03a + 3 = 9\ \text{mm}$ \\ \cline{2-3}
-    & Nắp hộp, $\delta_1$ & $\delta_1 = 0.9\delta = 8\ \text{mm}$ \\ \cline{2-3}
-    & Chiều dày, $e$ & $e = (0.8 \div 1)\delta = 8\ \text{mm}$ \\ \hline
-\multirow{2}{*}{Gân tăng cứng} 
-    & Chiều cao, $h$ & Chọn $h = 58\ \text{mm} \ (h < 58)$ \\ \cline{2-3}
-    & Độ dốc & $2^\circ$ \\ \hline
-\multirow{5}{*}{Đường kính} 
-    & Bu lông nền, $d_1$ & $d_1 > 0.04a + 10 \Rightarrow d_1 = 16\ \text{mm}$ \\ \cline{2-3}
-    & Bu lông cạnh ổ, $d_2$ & $d_2 = (0.7 \div 0.8)d_1 = 12\ \text{mm}$ \\ \cline{2-3}
-    & Bu lông ghép bích nắp và thân, $d_3$ & $d_3 = (0.8 \div 0.9)d_2 = 10\ \text{mm}$ \\ \cline{2-3}
-    & Vít ghép nắp ổ, $d_4$ & $d_4 = (0.6 \div 0.7)d_2 = 10\ \text{mm}$ \\ \cline{2-3}
-    & Vít ghép nắp cửa thăm, $d_5$ & $d_5 = (0.5 \div 0.6)d_2 = 8\ \text{mm}$ \\ \hline
-\multirow{4}{*}{Chiều rộng mặt bích} 
-    & $K_1 = e_1 + (1.3 \div 1.4)d_2$ & $= 27\ \text{mm}$ \\ \cline{2-3}
-    & $K_2 = (1.3 \div 1.4)d_2$ & $= 24\ \text{mm}$ \\ \cline{2-3}
-    & $K_3 = e_3 + (1.3 \div 1.4)d_3$ & $= 25\ \text{mm}$ \\ \cline{2-3}
-    & $K_4 = (1.3 \div 1.4)d_3$ & $= 25\ \text{mm}$ \\ \hline
-    \multirow{4}{*}{Kích thước gối trục} 
-    & Bề rộng mặt ghép bu lông cạnh ổ, $K_2$ & $K_2 = E_2 + R_2 + (3 \div 5) = 45\ \text{mm}$ \\ \cline{2-3}
-    & $E_2 \approx 1.6d_2$ & $= 22\ \text{mm}$ \\ \cline{2-3}
-    & $R_2 \approx 1.3d_2$ & $= 18\ \text{mm}$ \\ \cline{2-3}
-    & $C_1 \approx D_{31}/2 = 66\ \text{mm}$, $C_2 \approx D_{32}/2 = 85\ \text{mm}$ & \\ \hline
-Mặt đế hộp & Chiều cao $h$ & Theo kết cấu và kích thước mặt tựa \\ \hline
-\multirow{4}{*}{Mặt đế hộp} 
-    & $S_1 = (1.3 \div 1.5)d_1$ & $= 26\ \text{mm}$ \\ \cline{2-3}
-    & Có phần lõi: $D_d$ theo dao khoét & $S_1 \approx (1.4 \div 1.7)d_1 = 28\ \text{mm}$ \\ \cline{2-3}
-    & $S_2 \approx (1 \div 1.1)d_1 = 20\ \text{mm}$ & \\ \cline{2-3}
-    & $K_1 \approx 3d_1 = 60\ \text{mm}$, $q \geq K_1 + 2\delta = 78\ \text{mm}$ & \\ \hline
-\multirow{4}{*}{Khe hở giữa các chi tiết} 
-    & Giữa bánh răng và thành trong & $\Delta \geq (1 \div 1.2)\delta = 64\ \text{mm}$ \\ \cline{2-3}
-    & Giữa đỉnh răng lăn với đáy hộp & $\Delta_1 = (3 \div 5)\delta = 44\ \text{mm}$ \\ \cline{2-3}
-    & Mặt bên bánh răng trục 1 & $\Delta \geq \delta \Rightarrow \Delta = 13\ \text{mm}$ \\ \cline{2-3}
-    & Mặt bên bánh răng trục 2 & $\Delta \geq \delta \Rightarrow \Delta = 10\ \text{mm}$ \\ \hline
-Số lượng bu lông nền & $Z = \frac{L + B}{200 \div 300} = 4$ & Với $L = 497\ \text{mm}$, $B = 233\ \text{mm}$ \\ \hline
-\end{tabular}
-\end{table}
-
-\textbf{Kích thước gối trục: }
-Tra bảng 18.2 tài liệu [2], ta có đường kính ngoài và tâm lỗ vít như sau:
-
+    \centering
+    \begin{tabular}{|p{5cm}|c|p{7cm}|} % Cột đầu tiên cố định độ rộng 5cm
+    \hline
+    \textbf{Tên gọi} & \textbf{Ký hiệu} & \textbf{Giá trị số bộ} \\
+    \hline
+    Chiều dày thân hộp & $\delta$ & $0.02a + 1 = 5$, nhỏ hơn 7mm $\rightarrow$ chọn $\delta = 10$mm \\
+    \hline
+    Chiều dày nắp hộp & $\delta_i$ & $\delta_i \approx \delta = 10$mm \\
+    \hline
+    Chiều dày mặt bích thân hộp & $s_2$ & $2.35\delta = 23.5$mm \\
+    \hline
+    Chiều dày mặt bích nắp hộp & $s_1$ & $1.5\delta_i = 15$mm \\
+    \hline
+    Đường kính bu lông nền & $d_1$ & $0.03a + 12 = 16.8$mm \\
+    \hline
+    Số bu lông nền & $z$ & 4 \\
+    \hline
+    Đường kính bu lông tại vị trí lắp ổ lăn & $d_2$ & $0.75d_1 = 12.6$mm, theo tiêu chuẩn chọn bu lông M14 \\
+    \hline
+    Đường kính bu lông tại vị trí lắp thân hộp với nắp hộp & $d_3$ & $0.6d_1 = 10.08$mm, theo tiêu chuẩn chọn bu lông M12 \\
+    \hline
+    Chiều rộng mặt bích & $S$ & $k + 1.5\delta = 40 + 15 = 55$, $k$ chọn theo bu lông nền (M16 ứng với $k=40$, chọn theo bảng 10.1 [1]) \\
+    \hline
+    Chiều dày gân tăng cứng thân hộp & $\delta_3$ & $(0.8 \ldots 1)\delta \rightarrow$ chọn $\delta_3 = 10$mm \\
+    \hline
+    Khe hở nhỏ nhất giữa bánh răng và thân hộp & $c_2$ & $c_2 = 1.2\delta = 12$mm \\
+    \hline
+    Vị trí tuyến bu lông tại nơi độ và mặt bích thân hộp & $c$ & $c \approx (1 \ldots 1.2)d_2 = 14$mm \\
+    \hline
+    Khoảng cách từ mặt đáy thân hộp đến định bằng răng & $Y$ & $Y = 4.8\delta = 48$mm \\
+    \hline
+    Chiều dày nắp và thân HGT tại vị trí lắp ổ & & Chọn theo kết cấu sao cho lớn hơn hoặc bằng $(s_1 + s_2)$ \\
+    \hline
+    \end{tabular}
+    \end{table}
+\subsection{Kích thước nắp ổ}
+Chọn theo đường kính ngoài của ổ lăn, thông số của các nắp ổ được thể hiện \\qua bảng sau:
 \begin{table}[H]
-\centering
-\begin{tabular}{|c|c|c|c|}
-\hline
-\textbf{Trục} & \textbf{D} & \textbf{D2} & \textbf{D3} \\ \hline
-I   & 72  & 102 & 130 \\ \hline
-II  & 110 & 140 & 170 \\ \hline
-\end{tabular}
+    \centering
+    \begin{tabular}{|l|c|c|c|c|c|c|}
+    \hline
+    \textbf{Trục} & \textbf{$D1$} & \textbf{$D2$} & \textbf{$D3$} & \textbf{$n$} & \textbf{$d$} & \textbf{$d1$} \\
+    \hline
+    I & 90 & 110 & 62 & 4 & 9 & 15 \\
+    \hline
+    II & 110 & 130 & 80 & 6 & 9 & 15 \\
+    \hline
+    \end{tabular}
 \end{table}
-
-\section{Các chi tiết phụ}
-\subsection{Nắp ổ}
-Nắp ổ thường chế tạo bằng gang xám GX15-32, được chọn như sau:
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline
-\textbf{Trục} & \textbf{d} & \textbf{D2} & \textbf{D3} & \textbf{a} & \textbf{b} & \textbf{c} \\ \hline
-I   & 30 & 43  & 31   & 4.3 & 6 & 12 \\ \hline
-II  & 50 & 69  & 51.5 & 6.5 & 9 & 16 \\ \hline
-\end{tabular}
-\end{table}
-
-\subsection{Cửa thăm}
-Để kiểm tra, quan sát các chi tiết trong hộp khi lắp ghép và đổ dầu vào hộp trên đỉnh hộp có làm cửa thăm. Cửa thăm được đậy bằng nắp. Trên nắp có thể lắp thêm nút thông hơi. Kích thước cửa thăm chọn theo bảng sau:
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-\hline
-\textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} & \textbf{F} & \textbf{G} & \textbf{R} & \textbf{Kích thước vít} & \textbf{Số lượng vít} \\ \hline
-100 & 75 & 150 & 100 & 125 & -- & 87 & 12 & M8 & 4 \\ \hline
-\end{tabular}
-\end{table}
-
-\subsection{Nút thông hơi}
-Khi làm việc nhiệt độ trong hộp tăng lên, để giảm áp suất và điều hòa không khí bên trong và bên ngoài hộp, người ta dùng nút thông hơi. Nút thông hơi được lắp trên nắp cửa thăm hoặc ở vị trí cao nhất của nắp hộp. Ta chọn kích thước nút thông hơi có lưới chống bụi theo bảng sau:
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\hline
-\textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{E} & \textbf{F} & \textbf{G} & \textbf{H} & \textbf{I} & \textbf{J} & \textbf{K} & \textbf{L} & \textbf{M} & \textbf{N} & \textbf{O} \\ \hline
-M27X2 & 15 & 30 & 15 & 36 & 32 & 6 & 4 & 18 & 8 & 6 & 22 & 36 & 32 & 10 \\ \hline
-\end{tabular}
-\end{table}
-Để vận chuyển hộp giảm tốc được thuận lợi, nên sử dụng bu lông vòng lắp trên
-nắp hộp giảm tốc. Số lượng và kích thước bu lông vòng chọn theo trọng lượng hộp
-giảm tốc và cách mắc dây cáp vào bu lông vòng
-
+\cleardoublepage
+\section{Các chi tiết hệ thống bôi trơn hộp giảm tốc}
 \subsection{Que thăm dầu}
-Để kiểm tra mức dầu trong hộp, nên sử dụng que thăm dầu. Nên kiểm tra mức dầu khi hộp giảm tốc không hoạt động. Nếu hộp giảm tốc làm việc liên tục (3 ca/ngày) thì nên kèm theo ống bao bên ngoài để có thể kiểm tra mức dầu khi hộp giảm tốc đang hoạt động. Que thăm dầu nên đặt nghiêng so với phương thẳng đứng góc nhỏ hơn $35^\circ$. Kích thước que thăm dầu có dạng như sau:
-
+Chọn que thăm dầu M16x1.5 với thông số sau:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+    \hline
+    $\mathbf{d}$ & $\mathbf{d1}$ & $\mathbf{d2}$ & $\mathbf{D}$ & $\mathbf{D1}$ & $\mathbf{L1}$ & $\mathbf{l}$ & $\mathbf{l1}$ & $\mathbf{b}$ \\
+    \hline
+    M16x1.5 & 5 & 7 & 24 & 16 & 40 & 16 & 8 & 4 \\
+    \hline
+    \end{tabular}
+\end{table}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{pictures/quethamdau.png}
+\end{figure}
+\cleardoublepage
 \subsection{Nút tháo dầu}
-Sau một thời gian làm việc, dầu bôi trơn chứa trong hộp bị bẩn hoặc bị biến chất,
-do đó phải thay dầu mới. Để tháo dầu cũ, ở đáy hộp có lỗ tháo dầu. Lúc làm việc lỗ
-được bít kín bằng nút tháo dầu. Ta chọn nút tháo dầu ren thẳng như sau:
+Chọn nút tháo dầu dạng vít ren trụ tròn M20x1.5 với thông số như sau:
 \begin{table}[H]
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
     \hline
-    $d$ & $b$ & $m$ & $f$ & $l$ & $c$ & $q$ & $D$ & $S$ & $D_0$ \\
+    $\mathbf{d1}$ & $\mathbf{D}$ & $\mathbf{D1}$ & $\mathbf{L}$ & $\mathbf{l}$ & $\mathbf{b}$ & $\mathbf{s}$ & $\mathbf{t}$ & $\mathbf{d2}$ & $\mathbf{D2}$ & $\mathbf{D2}$ \\
     \hline
-    M20 × 2 & 15 & 9 & 3 & 28 & 2.5 & 17.8 & 30 & 22 & 25.4 \\
+    M20x1.5 & 30 & 25.4 & 30 & 15 & 4 & 22 & 2.5 & 20 & 32 & 3 \\
     \hline
     \end{tabular}
-    \end{table}
+\end{table}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{pictures/nut.png}
+\end{figure}
 
-\subsection{Vòng chắn dầu}
-Vòng gồm 3 rãnh tiết diện tam giác có góc ở đỉnh là $60^\circ$. Khoảng cách giữa các
-đỉnh là 3 (mm). Vòng cách mép trong thành hộp khoảng (0,5÷1) mm. Khe hở giữa vỏ
-với mặt ngoài của vòng ren là 0,43 (mm)
-
-\subsection{Chốt định vị trụ}
-Mặt ghép giữa nắp và thân nằm trong mặt phẳng chứa đường tâm các trục.
-Lỗ trụ lắp ở trên nắp và thân hộp được gia công đồng thời, để đảm bảo vị trí
-tương đối của nắp và thân trước và sau khi gia công cũng như khi lắp ghép,
-ta dùng 2 chốt định vị, nhờ có chốt định vị khi xiết bulông không làm biến
-dạng vòng ngoài của ổ. Ta chọn chốt định vị theo bảng sau: \\
+\subsection{Cửa thăm và nút thông hơi}
+Chọn nắp cửa thăm và nút thông hơi có kích thước như sau:
 \begin{center}
-\begin{tabular}{|c|c|c|}
-    \hline
-    d & c & l \\
-    \hline
-    6 & 6 & 10 \\
-    \hline
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+A & B & A1 & B1 & C & K & R & Dimension & Quantity \\
+\hline
+40 & 40 & 80 & 90 & 65 & 30 & 10 & M8 & 4 \\
+\hline
 \end{tabular}
 \end{center}
-
-\subsection{Ống lót}
-Ống lót được dùng để đỡ ổ lăn, để thuận tiện khi lắp ghép và điều chỉnh bộ phận ổ, đồng thời tránh cho ổ khỏi bụi bặm, chất bẩn. Ta chọn kích thước của ống lót có chiều dày:
-$\delta = 6 \div 8 \text{ mm, ta chọn } \delta = 8 \text{ mm}$
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{pictures/vitvong.png}
+\end{figure}
+\subsection{Vòng chắn dầu}
+Gồm 3 rãnh tiết diện tam giác đều có góc ở đỉnh là 60 độ, khoảng cách giữa các đỉnh là 3mm. Mép ngoài của vòng cách thành trong của hộp một khoảng bằng 3mm. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{pictures/vongchandau.png}
+\end{figure}
+\subsection{Chốt định vị}
+Dùng để xác định vị trí làm việc êm của hộp giảm tốc sau khi lắp ráp, hình dạng và kích thước được cho bởi:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{pictures/chotdinhvi.png}
+\end{figure}
 \subsection{Vòng phớt}
-Vòng phớt là loại lót kín động gián tiếp nhằm mục đích bảo vệ ổ khỏi bụi bặm, chất
-bẩn, hạt cứng và các tạp chất khác xâm nhập vào ổ. Những chất này làm ổ chóng bị mài
-mòn và bị han gỉ. Ngoài ra, vòng phớt còn đề phòng dầu chảy ra ngoài. Tuổi thọ ổ lăn phụ
-thuộc rất nhiều vào vòng phớt.
-Vòng phớt được dùng khá rộng rãi do có kết cấu đơn giản, thay thế dễ dàng. Tuy nhiên
-có nhược điểm là chóng mòn và ma sát lớn khi bề mặt trục có độ nhám cao.
-
+Vòng phớt là loại lót kín động gián tiếp nhằm mục đích bảo vệ ổ khỏi bụi bặm, chất bẩn, hạt cứng và các tạp chất khác xâm nhập vào ổ. Những chất này làm ổ chóng bị mài mòn và bị han gỉ. Ngoài ra, vòng phớt còn đề phòng dầu chảy ra ngoài. Tuổi thọ ổ lăn phụ thuộc rất nhiều vào vòng phớt. Vòng phớt được dùng khá rộng rãi do có kết cấu đơn giản, thay thế dễ dàng. Tuy nhiên có nhược điểm là chóng mòn và ma sát lớn khi bề mặt trục có độ nhám cao.\\
+Theo tiêu chuẩn, chọn vòng phớt có đường kính trong là 25mm cho trục dẫn và vòng phớt có đường kính trong là 38mm cho trục bị dẫn. Các kích thước khác của vòng phớt được lấy theo tiêu chuẩn.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{pictures/vongphot.png}
+\end{figure}
+\cleardoublepage
