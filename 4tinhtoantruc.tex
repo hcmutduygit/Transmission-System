@@ -13,12 +13,12 @@ Tra bảng thông số vật liệu ta có thông số cơ tính của vật li�
 \end{itemize}
 Chọn ứng suất xoắn cho phép $[\tau] = 20 \, \text{MPa}$ \\
 Xác định sơ bộ đường kính trục:
-\[
+\begin{equation}
 d_1 \geq \sqrt[3]{\frac{T_1}{0.2[\tau]}} = \sqrt[3]{\frac{65914.47}{0.2 \cdot 20}} = 25.44 \text{mm}
-\]
-\[
+\end{equation}
+\begin{equation}
 d_2 \geq \sqrt[3]{\frac{T_2}{0.2[\tau]}} = \sqrt[3]{\frac{321365.99}{0.2 \cdot 20}} = 37.69 \text{mm}
-\]
+\end{equation}
 Tra bảng 10.2 tài liệu [2], ta chọn sơ bộ đường kính trục và bề rộng ổ lăn theo tiêu chuẩn:
 \begin{itemize}
     \item Trục I: $d_1 = 25.44 \, \text{mm}$; $b_{o1} = 19 \, \text{mm}$
@@ -51,7 +51,7 @@ Theo bảng 10.3 tài liệu [2], ta có:
     \item $l_{m22} = (1.2\div 1.5)d_1 = 45.25 \div 57$. Chọn $l_{m22}=57$ mm
     \item $l_{23} = 0.5(l_{m13} + b_{o1}) + k_1 + k_2 = 64.5 \, \text{mm}$
     \item $l_{21} = 0.5(l_{m23} + b_{o2}) + k_1 + k_2 = 140.5 \, \text{mm}$
-    \item $l_{22} = 2l_{21}$ = 
+    \item $l_{22} = 2l_{21}$ = 281 mm
 \end{itemize}
 
 \section{Phân tích lực tác dụng}
@@ -72,11 +72,11 @@ Theo bảng 10.3 tài liệu [2], ta có:
 \section{Tính momen tương đương và đường kính trục}
 \subsection{Trục I}
 Moment do lực dọc trục tạo ra:
-\[
+\begin{equation}
     M_{a1} = F_{a1} \cdot \frac{d_1}{2} 
            = 756.177 \cdot \frac{53.33}{2} 
            = 20163.47\ \text{Nmm}
-\]
+\end{equation}
 \[
     \left\{
     \begin{array}{l}
@@ -107,14 +107,15 @@ Moment do lực dọc trục tạo ra:
 \]
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{pictures/momen1.png}
+    \includegraphics[width=0.75\textwidth]{pictures/momen1.png}
+    \caption{Biểu đồ momen trên trục I}    
 \end{figure}
-\[
+\begin{equation}
     M_A^{td} 
     = \sqrt{M_{X/A}^2 + M_{Y/A}^2 + 0.75 \cdot T_A^2} 
     = \sqrt{0.75 \cdot 65914.47^2}  
     = 57083.6\ \text{Nmm}
-\]
+\end{equation}
 
 \[
     M_B^{td} 
@@ -130,17 +131,17 @@ Moment do lực dọc trục tạo ra:
     = 98777.03\ \text{Nmm}
 \]
 
-\[
+\begin{equation}
     M_D^{td} 
     = \sqrt{M_{X/D}^2 + M_{Y/D}^2 + 0.75 \cdot T_D^2} 
     = 0 
-\]
+\end{equation}
 $\Rightarrow$ Vị trí nguy hiểm là vị trí C.
-\[
+\begin{equation}
     d_C \ge \sqrt[3]{\frac{M_C^{td}}{0.1 \cdot \sigma}} 
         = \sqrt[3]{\frac{98777.03}{0.1 \cdot 67}} 
         = 24.5\ \text{mm}
-\]
+\end{equation}
 Tại ví trí C có lắp bánh răng, do đó ta tăng đường kính trục thêm 5\% = 25.7 mm. \\
 Căn cứ theo kết cấu của trục và bánh răng dẫn, thiết kế trục dẫn 1 với bánh răng liền trục, đường kính các tiết diện còn lại chọn để thỏa mãn yêu cầu về lắp ráp và thỏa mãn dãy kích thước tiêu chuẩn: 
 \begin{itemize}
@@ -151,11 +152,11 @@ Căn cứ theo kết cấu của trục và bánh răng dẫn, thiết kế tr�
 
 \subsection{Trục II}
 Moment do lực dọc trục tạo ra:
-\[
+\begin{equation}
     M_{a2} = F_{a2} \cdot \frac{d_2}{2} 
            = 756.177 \cdot \frac{266.67}{2} 
            = 100825\ \text{Nmm}
-\]
+\end{equation}
 \[
     \left\{
     \begin{array}{l}
@@ -186,13 +187,14 @@ Moment do lực dọc trục tạo ra:
 \]
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{pictures/momen2.png}
+    \includegraphics[width=0.85\textwidth]{pictures/momen2.png}
+    \caption{Biểu đồ momen trên trục II}
 \end{figure}
-\[
+\begin{equation}
     M_A^{td} 
     = \sqrt{M_{X/A}^2 + M_{Y/A}^2 + 0.75 \cdot T_A^2} 
     = 0
-\]
+\end{equation}
 
 \[
     M_B^{td} 
@@ -215,11 +217,11 @@ Moment do lực dọc trục tạo ra:
     = 278311.12\ \text{Nmm}
 \]
 $\Rightarrow$ Vị trí nguy hiểm là vị trí B.
-\[
+\begin{equation}
     d_B \ge \sqrt[3]{\frac{M_B^{td}}{0.1 \cdot \sigma}} 
         = \sqrt[3]{\frac{318472.26}{0.1 \cdot 67}} 
         = 36.22\ \text{mm}
-\]
+\end{equation}
 Tại ví trí B có lắp bánh răng, do đó ta tăng đường kính trục thêm 5\% = 38 mm. \\
 Như vậy, để thỏa mãn dãy kích thước tiêu chuẩn và yêu cầu lắp ráp, ta chọn:
 \begin{itemize}
@@ -233,7 +235,7 @@ Như vậy, để thỏa mãn dãy kích thước tiêu chuẩn và yêu cầu l
 \subsection{Xác định ứng suất dập cho phép và ứng suất cắt cho phép của then tại các vị trí lắp ráp}
 \subsubsection{Mối ghép then tại tiết diện lắp bánh đai trên trục I}
 \begin{itemize}
-    \item Do bánh đai được chế tạo từ gang ở chế độ tải trọng tĩnh, ta có ứng suất dập cho phép của then $[\sigma_d] = 80 \, MPa$ (Bảng 9.5, Trịnh Chất tập 1).
+    \item Do bánh đai được chế tạo từ gang ở chế độ tải trọng tĩnh, ta có ứng suất dập cho phép của then $[\sigma_d] = 80 \, MPa$ (Bảng 9.5, [2]).
     \item Ứng suất cắt cho phép của then $[\tau_c] = 60 \dots 90 \, MPa$, ta chọn $[\tau_c] = 60 \, MPa$.
     \item Dựa vào đường kính trục và bảng 9.1a [2], ta chọn then bằng cho mối ghép trên và có kích thước sau:
     \begin{table}[h!]
@@ -245,6 +247,7 @@ Như vậy, để thỏa mãn dãy kích thước tiêu chuẩn và yêu cầu l
     22 & 8 & 7 & 4 & 2.8 \\
     \hline
     \end{tabular}
+    \caption{Kích thước then tại vị trí lắp bánh đai trên trục I}
     \end{table}
 \end{itemize}
 \subsubsection{Các mối ghép then trên trục II}
@@ -263,6 +266,7 @@ Như vậy, để thỏa mãn dãy kích thước tiêu chuẩn và yêu cầu l
         45 & 14 & 9 & 5.5 & 3.8 \\
         \hline
         \end{tabular}
+        \caption{Kích thước then tại vị trí lắp bánh răng trên trục II}
         \end{table}
         \item Tại vị trí lắp nối trục:
         \begin{table}[h!]
@@ -274,6 +278,7 @@ Như vậy, để thỏa mãn dãy kích thước tiêu chuẩn và yêu cầu l
         36 & 10 & 8 & 5 & 3.3 \\
         \hline
         \end{tabular}
+        \caption{Kích thước then tại vị trí nối trục}
         \end{table}
     \end{itemize}
 \end{itemize}
@@ -296,73 +301,41 @@ Trục II - B & 14 & 9 & 56 & 47 & 5,5 & 3,8 & 86,82633975 & 16,46378429 & 150 &
 Trục II - D & 10 & 8 & 45 & 45 & 5 & 3,3 & 132,2493786 & 47,6097763 & 150 & 60 \\
 \hline
 \end{tabular}
+\caption{Kiểm nghiệm then theo độ bền dập và độ bền cắt}
 \end{table}
 
 \noindent Như vậy các then đều thỏa mãn độ bền dập và độ bền cắt.
-% \begin{itemize}
-%     \item Dựa vào bảng 9.1 là tài liệu [2], chọn kích thước then BXH theo tiết diện lớn nhất của trước.
-%     \item Chọn chiều dài $l$, theo tiêu chuẩn của then, nhỏ hơn chiều dài mayơ $l_m = 5 \div 10$ mm.
-%     \item Kiểm nghiệm then theo độ bền đập và độ bền cắt then băng
-%     \[
-%     \sigma_d = \frac{2T}{d l_w (h - t_1)} \leq [\sigma_d] \quad \tau_c = \frac{2T}{d l_w b} \leq [\tau_c]
-%     \]
-%     Với
-%     \[
-%     [\sigma_d] = 150 \, \text{MPa}, \text{tra theo bảng 9.5 tài liệu \cite{2}}
-%     \]
-%     \[
-%     [\tau_c] = 60 \div 90 \, \text{MPa}
-%     \]
-%     $l_w = l - b$: chiều dài làm việc của then băng 2 đầu tròn
-% \end{itemize}
-% \textbf{Bảng thông số:}
-% \begin{center}
-% \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|}
-% \hline
-% \textbf{Trục} & \textbf{Đường kính} & \textbf{Mặt cắt} & $l_m$ & $l$ & $l_w$ & $b$ & $h$ & $t_1$ & $\sigma_d$ & $\tau_c$ & $T$ \\
-% \hline
-% \multirow{2}{*}{\textbf{I}} & 28 & 12 & 45 & 40 & 32 & 8 & 7 & 4 & 107,4 & 40,3 & 1443308,115 \\
-% \cline{2-12}
-% & 35 & 13 & 70 & 65 & 55 & 10 & 8 & 5 & 49,97 & 15,0 & 1443308,115 \\
-% \hline
-% \multirow{2}{*}\textbf{II} & 55 & 22 & 75 & 70 & 54 & 16 & 10 & 6 & 101,1 & 25,3 & 600394,168 \\
-% \cline{2-12}
-% & 46 & 23 & 75 & 70 & 56 & 14 & 9 & 5,5 & 127,6 & 31,9 & 600394,168 \\
-% \hline
-% \end{tabular}
-% \end{center}
-
-% $\Rightarrow$ Các mặt cắt đều thỏa điều kiện bền đập và căng bền đảm bảo an toàn cho phép.
-
 \section{Kiểm nghiệm độ bền trục}
 \noindent Ứng suất bền giới hạn của thép C45 tôi là $\sigma_b = 600 \, MPa$, giới hạn mỏi của vật liệu được tính theo công thức:
-$$ \sigma_{-1} = 0.436 \cdot \sigma_b = 261.6 \, MPa $$
-$$ \tau_{-1} = 0.58 \cdot \sigma_{-1} = 151.73 \, MPa $$
-
+\begin{equation}
+    \sigma_{-1} = 0.436 \cdot \sigma_b = 261.6 \, MPa
+\end{equation}
+\begin{equation}
+    \tau_{-1} = 0.58 \cdot \sigma_{-1} = 151.73 \, MPa
+\end{equation}
 \noindent Chọn hệ số an toàn $[s] = 2$, ta lần lượt kiểm nghiệm trục theo độ bền mỏi và độ bền tĩnh:
 
 \subsection{Độ bền mỏi}
 Hệ số an toàn:
-\[
-s = \frac{s_0 s_\tau}{\sqrt{s_0^2 + s_\tau^2}} \geq [s]
-\]
+\begin{equation}
+    s = \frac{s_0 s_\tau}{\sqrt{s_0^2 + s_\tau^2}} \geq [s]
+\end{equation}
 \begin{itemize}
     \item Với hệ số an toàn cho phép $[s] = 1.5 \div 2.5$, khi tăng độ căng $[s] = 2.5 \div 3$, nhưng vậy không cần kiểm nghiệm về độ căng.
     \item $s_0, s_\tau$ hệ số an toàn chi xét riêng ứng suất pháp, ứng suất tiếp
-    \[
-    s_0 = \frac{K_0 \sigma_a + \psi_0 \sigma_m}{\varepsilon_\beta \sigma}, \quad s_\tau = \frac{K_\tau \tau_a + \psi_\tau \tau_m}{\varepsilon_\tau \tau}
-    \]
-    \item $\sigma_{-1}, \tau_{-1}$ giới hạn mỏi của vật liệu tính theo công thức:
-    \[
-    \sigma_{-1} = (0.4 \div 0.5) \sigma_b = 240 \div 300 \, \text{MPa}, \text{ chọn } \sigma_{-1} = 280 \, \text{MPa}
-    \]
-    \[
-    \tau_{-1} = (0.22 \div 0.25) \sigma_b = 132 \div 150 \, \text{MPa}, \text{ chọn } \tau_{-1} = 140 \, \text{MPa}
-    \]
-    \[
-    \sigma_b = 600 \, \text{MPa}: \text{giới hạn bền của thép 45 thường hóa}
-    \]
-    Theo bảng 10.8 tài liệu [1], $K_0 = 1.75$, $K_\tau = 1.5$
+    \begin{equation}
+        s_0 = \frac{K_0 \sigma_a + \psi_0 \sigma_m}{\varepsilon_\beta \sigma}, \quad s_\tau = \frac{K_\tau \tau_a + \psi_\tau \tau_m}{\varepsilon_\tau \tau}
+    \end{equation}
+    \begin{equation}
+        \sigma_{-1} = (0.4 \div 0.5) \sigma_b = 240 \div 300 \, \text{MPa}, \text{ chọn } \sigma_{-1} = 280 \, \text{MPa}
+    \end{equation}
+    \begin{equation}
+        \tau_{-1} = (0.22 \div 0.25) \sigma_b = 132 \div 150 \, \text{MPa}, \text{ chọn } \tau_{-1} = 140 \, \text{MPa}
+    \end{equation}
+    \begin{equation}
+        \sigma_b = 600 \, \text{MPa}: \text{giới hạn bền của thép 45 thường hóa}
+    \end{equation}
+    Theo bảng 10.8 tài liệu [2], $K_0 = 1.75$, $K_\tau = 1.5$
     \item $\sigma_a, \sigma_m, \tau_a, \tau_m$: biên độ và giá trị của ứng suất. Vì tất cả các trục của hợp giảm tốc đều quay nên ứng suất thay đổi theo chu kỳ đối xứng: $\sigma_m = 0$, $\sigma_a = \sigma_{\text{max}} = \frac{M}{W}$, với $M$ là moment uốn thương trường, $W$ là moment chóng uốn
     \item Đo trực quy 1 chiều nên ứng suất xoắn thay đổi theo chu kỳ mạch động
 \end{itemize}
@@ -374,8 +347,10 @@ s = \frac{s_0 s_\tau}{\sqrt{s_0^2 + s_\tau^2}} \geq [s]
     \item $\varepsilon_\sigma, \varepsilon_\tau$: hệ số kích thước (bảng 10.3 tài liệu [1])
     \item $\beta = 1.7$: hệ số tăng bề mặt (bảng 10.5 tài liệu [1])
 \end{itemize}
-\textbf{Bảng kết quả tính toán kiểm nghiệm trục theo độ bền mỏi}
+
 \begin{center}
+\begin{table}[H]
+\centering
 \begin{tabular}{|l|c|c|c|c|c|c|c|c|}
 \hline
 \textbf{Trục} & \textbf{Tiết diện} & $W$ & $ W_0 $ & $\varepsilon_\tau$ & $\varepsilon_\sigma$ & $s_\sigma$ & $s_\tau$ & $s$ \\
@@ -397,6 +372,8 @@ s = \frac{s_0 s_\tau}{\sqrt{s_0^2 + s_\tau^2}} \geq [s]
 & D & 3913.08 & 8493.52 & 0.88 & 0.81 & 2.68 & 3.07 & 2.02 \\
 \hline
 \end{tabular}
+\caption{Bảng kết quả tính toán kiểm nghiệm trục theo độ bền mỏi}
+\end{table}
 \end{center}
 Như vậy tất cả tiết diện của 2 trục đều thỏa mãn độ bền mỏi.
 \subsection{Độ bền tĩnh}
@@ -410,8 +387,8 @@ Trong đó:
 \[
 \sigma = \frac{M}{W} = \sigma_a; \quad \tau = \frac{T}{W_0} = 2\tau_a; \quad [\sigma_d]_t \approx 0.8\sigma_{ch} = 0.8340 = 272 \, \text{MPa}
 \]
-\textbf{Bảng kiểm nghiệm trục theo độ bền tĩnh}
-\begin{center}
+\begin{table}[H]
+\centering
 \begin{tabular}{|c|c|c|c|c|}
     \hline
       & $\sigma$ & $\tau$ & $\sigma_{td}$ & $[\sigma]$ \\
@@ -433,5 +410,6 @@ Trong đó:
       & 71.12 & 37.84 & 96.71 & 272 \\
       \hline
 \end{tabular}
-\end{center}
+\caption{Bảng kết quả kiểm nghiệm trục theo độ bền tĩnh}
+\end{table}
 Vậy các trục thỏa điều kiện độ bền tĩnh

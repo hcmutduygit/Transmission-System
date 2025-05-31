@@ -21,13 +21,17 @@
 
 %Footer
 \fancyfoot{} % clear all footer fields
-\fancyfoot[L]{\scriptsize \ttfamily Đồ án hệ thống truyền động}
-\fancyfoot[R]{\scriptsize \ttfamily Trang {\thepage}/41}
+\fancyfoot[L]{\scriptsize \ttfamily Đồ án hệ thống truyền động - HK242}
+\fancyfoot[R]{\scriptsize \ttfamily Trang {\thepage}/48}
 \renewcommand{\headrulewidth}{0.3pt}
 \renewcommand{\footrulewidth}{0.3pt}
 \begin{document}
     \include{titlepage}
+    \input{loinoidau.tex}
     \tableofcontents
+    \cleardoublepage
+    \listoftables
+    \listoffigures
     \cleardoublepage
     \input{problem.tex}
     \input{1chondongco.tex}
@@ -37,7 +41,6 @@
     \include{5noitrucvaolan.tex}
     \include{6thanmay.tex}
     \include{7dungsai.tex}
-    % \input{9bophancongtac.tex}
     \include{8hethongtuyendong.tex}
     
     \begin{thebibliography}{9}
@@ -47,7 +50,9 @@
         Trịnh Chất – Lê Văn Uyển, Tính toán thiết kế hệ dẫn động cơ khí, tập 1, Nhà xuất bản giáo dục, 2006.
         \bibitem{key3}
         Trịnh Chất – Lê Văn Uyển, Tính toán thiết kế hệ dẫn động cơ khí tập 2, Nhà xuất bản giáo dục, 2006.
-        % \bibitem{key4}
-        % Hồ Lê Viên, Các máy gia công vật liệu rắn và dẻo tập 2, Nhà xuất bản khoa học và kỹ thuật
+        \bibitem{key4}
+        Nguyễn Hữu Lộc, Thiết kế máy - chi tiết máy, Nhà xuất bản Đại học quốc gia TP. Hồ Chí Minh, 2020.
+        \bibitem{key5}
+        Hồ Lệ Viên, Các máy gia công vật liệu rắn và dẻo, Nhà xuất bản khoa học và kỹ thuật 
         \end{thebibliography}
 \end{document}
